@@ -16,14 +16,15 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
+
   let excusa =
-    who[parseInt(Math.random() * 4)] +
+    who[parseInt(Math.random() * who.length)] +
     " " +
-    action[parseInt(Math.random() * 4)] +
+    action[parseInt(Math.random() * action.length)] +
     " " +
-    what[parseInt(Math.random() * 3)] +
+    what[parseInt(Math.random() * what.length)] +
     " " +
-    when[parseInt(Math.random() * 5)];
+    when[parseInt(Math.random() * when.length)];
 
   document.getElementById("excuse").innerHTML = excusa;
 };
